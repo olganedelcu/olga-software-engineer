@@ -33,36 +33,40 @@
 
 ## 🚀 Quick Start
 
-1. **Clone the repository**
+1. **Clone the repository:**
 
-git clone https://github.com/olganedelcu/olga-software-engineer.git
+    ```bash
+    git clone https://github.com/olganedelcu/olga-software-engineer.git
+    ```
 
-2. **Install dependencies**
+2. **Install dependencies:**
 
-bash
-cd olga-software-engineer
-npm install
+    ```bash
+    cd olga-software-engineer
+    npm install
+    ```
 
-3. **Start development server**
+3. **Start development server:**
 
-bash
-npm run dev
+    ```bash
+    npm run dev
+    ```
 
-4. **Build for production**
+4. **Build for production:**
 
-bash
-npm run build
-
+    ```bash
+    npm run build
+    ```
 
 ## 📝 Environment Variables
 
 Create a `.env` file in the root directory:
 
-env
+```env
 VITE_HASHNODE_TOKEN=your_token_here
 VITE_GA_TRACKING_ID=your_ga_id_here
 
-
+```
 ## 📚 API Integration
 
 ### Hashnode Blog Posts
