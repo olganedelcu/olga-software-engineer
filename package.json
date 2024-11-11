@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "olga-software-engineer",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Portfolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Olga Nedelcu <olganedelcuam@gmail.com>",
   "dependencies": {
     "gatsby": "^5.13.5",
     "gatsby-plugin-image": "^3.13.1",
@@ -11,8 +11,9 @@
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@babel/preset-react": "^7.x.x",
+    "react": "^18.x.x",
+    "react-dom": "^18.x.x"
   },
   "devDependencies": {
     "prettier": "^2.8.8"

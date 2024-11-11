@@ -1,0 +1,33 @@
+:root {
+    /* Light theme */
+    --primary: #4E03C4;
+    --secondary: #833AB4;
+    --background: #FFFFFF;
+    --surface: #F8F9FA;
+    --text-primary: #2D3748;
+    --text-secondary: #4A5568;
+    --border: rgba(226, 232, 240, 0.8);
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --gradient: linear-gradient(135deg, #4E03C4 0%, #833AB4 100%);
+  }
+  
+  [data-theme='dark'] {
+    --primary: #9D6CFF;
+    --secondary: #B794F4;
+    --background: #1A202C;
+    --surface: #2D3748;
+    --text-primary: #F7FAFC;
+    --text-secondary: #E2E8F0;
+    --border: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --gradient: linear-gradient(135deg, #9D6CFF 0%, #B794F4 100%);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }

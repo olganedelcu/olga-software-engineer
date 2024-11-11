@@ -1,0 +1,250 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  
+  .heroSection {
+    padding: 4rem 2rem;
+    background: var(--surface);
+    border-radius: 32px;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .heroContent {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .textContent {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .highlight {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+  
+  .description {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .imageWrapper {
+    flex: 0 0 400px;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .podcastImage {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .platformLinks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .platformButton {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.75rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .spotify {
+    background: #1DB954;
+    color: white;
+    padding: 1rem 1.75rem;
+  }
+  
+  .youtube {
+    background: #FF0000;
+    color: white;
+    padding: 1rem 1.75rem;
+  }
+  
+  .platformButton:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--button-hover-shadow);
+  }
+  
+  .platformIcon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  
+  .latestEpisodes {
+    padding: 4rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  
+  .episodeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .episodeCard {
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+  
+  .episodeCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+  }
+  
+  .episodeThumbnail {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    flex-shrink: 0;
+  }
+  
+  .episodeThumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .playButton svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary);
+  }
+  
+  .episodeContent {
+    padding: 1.5rem;
+  }
+  
+  .episodeNumber {
+    font-size: 0.875rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .episodeTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+  
+  .episodeDescription {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .episodeMeta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+  }
+  
+  @media (max-width: 968px) {
+    .heroContent {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+  
+    .imageWrapper {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .platformLinks {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      padding: 2rem 0;
+    }
+  
+    .platformButton {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .episodeGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .episodeLink {
+text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  }
