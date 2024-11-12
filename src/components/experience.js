@@ -68,7 +68,7 @@ const positions = [
         highlight: "Banking APIs",
       },
     ],
-    tech: ["React", "Excel", "Postman", "Banking APIs", "OKR Tools"],
+    tech: ["React.js", "Excel", "Postman", "Banking APIs", "Confluence", "Git"],
   },
   {
     company: "theSeniorDev.com",
