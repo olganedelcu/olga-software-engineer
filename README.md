@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚀 Olga's Software Engineering Portfolio</h1>
+  <h1> My Software Engineering Portfolio 🚀</h1>
   <p>A modern, responsive portfolio showcasing my software engineering journey and technical blog posts.</p>
   
   <a href="https://olganedelcu.com">View Live Demo</a> · 
