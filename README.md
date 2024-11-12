@@ -71,39 +71,39 @@ VITE_GA_TRACKING_ID=your_ga_id_here
 
 ### Hashnode Blog Posts
 
-graphql
 query {
-user(username: "YOUR_USERNAME") {
-publication {
-posts(page: 1) {
-title
-brief
-slug
-dateAdded
-coverImage
+  user(username: "YOUR_USERNAME") {
+    publication {
+      posts(page: 1) {
+        title
+        brief
+        slug
+        dateAdded
+        coverImage
+      }
+    }
+  }
 }
-}
-}
-}
+
 
 
 ## 📁 Project Structure
 
 src/
-├── components/ # Reusable UI components
-│ ├── Header/
-│ ├── Footer/
-│ ├── Blog/
-│ └── Projects/
-├── pages/ # Main page components
-│ ├── Home/
-│ ├── About/
-│ └── Contact/
-├── api/ # API integration logic
-├── hooks/ # Custom React hooks
-├── types/ # TypeScript types
-├── utils/ # Utility functions
-└── styles/ # Global styles
+├── components/   # Reusable UI components
+│   ├── Header/
+│   ├── Footer/
+│   ├── Blog/
+│   └── Projects/
+├── pages/        # Main page components
+│   ├── Home/
+│   ├── About/
+│   └── Contact/
+├── api/          # API integration logic
+├── hooks/        # Custom React hooks
+├── types/        # TypeScript types
+├── utils/        # Utility functions
+└── styles/       # Global styles
 
 
 ## 🎯 Key Features Explained
@@ -139,9 +139,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👋 Contact
 
 Olga Nedelcu
-- Twitter: [@olganedelcu](https://twitter.com/olganedelcu)
 - LinkedIn: [Olga Nedelcu](https://linkedin.com/in/olganedelcu)
-- Blog: [Hashnode](https://olganedelcu.hashnode.dev)
+- Blog: [Hashnode](olgaconstantina.hashnode.dev)
 
 Project Link: [https://github.com/olganedelcu/olga-software-engineer](https://github.com/olganedelcu/olga-software-engineer)
 
