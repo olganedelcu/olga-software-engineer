@@ -71,7 +71,7 @@ VITE_GA_TRACKING_ID=your_ga_id_here
 
 ### Hashnode Blog Posts
 
-query {
+```query {
   user(username: "YOUR_USERNAME") {
     publication {
       posts(page: 1) {
@@ -84,12 +84,13 @@ query {
     }
   }
 }
-
+```
 
 
 ## 📁 Project Structure
 
 src/
+
 ├── components/   # Reusable UI components
 │   ├── Header/
 │   ├── Footer/
@@ -140,7 +141,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Olga Nedelcu
 - LinkedIn: [Olga Nedelcu](https://linkedin.com/in/olganedelcu)
-- Blog: [Hashnode](olgaconstantina.hashnode.dev)
+- Blog: [Hashnode](https://olgaconstantina.hashnode.dev/)
 
 Project Link: [https://github.com/olganedelcu/olga-software-engineer](https://github.com/olganedelcu/olga-software-engineer)
 
