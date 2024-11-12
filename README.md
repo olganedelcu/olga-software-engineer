@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <img src="public/demo.png" alt="Portfolio Screenshot" width="100%">
+  <img src="./src/images/demo.png" alt="Portfolio Screenshot" width="100%">
 </div>
 
 ---
