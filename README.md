@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <img src="public/screenshot.png" alt="Portfolio Screenshot" width="100%">
+  <img src="public/demo.png" alt="Portfolio Screenshot" width="100%">
 </div>
 
 ---
@@ -135,7 +135,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👋 Contact
 
 Olga Nedelcu
-- Twitter: [@olganedelcu](https://twitter.com/olganedelcu)
 - LinkedIn: [Olga Nedelcu](https://linkedin.com/in/olganedelcu)
 - Blog: [Hashnode](https://olganedelcu.hashnode.dev)
 
