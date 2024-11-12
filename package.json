@@ -5,13 +5,13 @@
   "version": "0.1.0",
   "author": "Olga Nedelcu <olganedelcuam@gmail.com>",
   "dependencies": {
+    "@babel/preset-react": "^7.x.x",
     "gatsby": "^5.13.5",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
-    "@babel/preset-react": "^7.x.x",
     "react": "^18.x.x",
     "react-dom": "^18.x.x"
   },
