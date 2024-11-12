@@ -1,8 +1,8 @@
-// If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { PageProps, Link, graphql, HeadFC } from "gatsby"
-
+import { PageProps, graphql, HeadFC } from "gatsby"
+import { Link } from 'gatsby'
 import Layout from "../components/layout"
+import type { ReactElement } from "react"
 import Seo from "../components/seo"
 
 type DataProps = {
@@ -14,7 +14,7 @@ type DataProps = {
 const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   data,
   location,
-}) => (
+}): ReactElement => (
   <Layout>
     <h1>
       Gatsby supports <b>TypeScript by default</b>
@@ -43,7 +43,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   </Layout>
 )
 
-
+export default UsingTypescript
 
 export const query = graphql`
   {
@@ -52,3 +52,5 @@ export const query = graphql`
     }
   }
 `
+
+export const Head: HeadFC<DataProps> = () => <Seo title="Using TypeScript" />

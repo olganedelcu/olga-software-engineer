@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Olga Nedelcu Portfolio Page`,
     description: `My personal portfolio page.`,
-    author: `@gatsbyjs`,
+    author: `Olga Nedelcu`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
