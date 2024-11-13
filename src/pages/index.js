@@ -30,6 +30,7 @@ const IndexPage = () => (
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt="Olga Constantina"
+              placeholder="blurred"
               className={styles.avatar}
             />
           </div>
