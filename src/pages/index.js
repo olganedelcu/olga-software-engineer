@@ -2,10 +2,8 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Feed from "../components/feed"
 import * as styles from "../components/index.module.css"
-import Experience from '../components/experience';
-
+import Experience from "../components/experience"
 
 const IndexPage = () => (
   <Layout>
@@ -56,7 +54,6 @@ const IndexPage = () => (
         </div>
       </div>
       <Experience />
-      <Feed />
     </div>
   </Layout>
 )

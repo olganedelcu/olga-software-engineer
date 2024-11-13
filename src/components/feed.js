@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import fetchHashnodeBlogFeed from '../utils/fetchHashnodeBlogFeed.js';
-import * as styles from './feed.module.css'; // Update to use new feed styles
+import * as styles from './blog.module.css';
 
-const Feed = () => {
+const Feed = ({ isHomePage }) => {
     const [posts, setPosts] = useState([]);
     const [hasNextPage, setHasNextPage] = useState(false);
     const [endCursor, setEndCursor] = useState(null);
@@ -10,7 +10,7 @@ const Feed = () => {
 
     const loadMorePosts = async () => {
         try {
-            const feed = await fetchHashnodeBlogFeed(4, endCursor);
+            const feed = await fetchHashnodeBlogFeed(isHomePage ? 2 : 4, endCursor);
             const newPosts = feed.edges.map(edge => ({
                 title: edge.node.title,
                 brief: edge.node.brief,
@@ -31,10 +31,9 @@ const Feed = () => {
     }, []);
 
     return (
-        <section className={styles.feedContainer}>
-            <h2 className={styles.feedTitle}>Latest Blog Posts</h2>
+        <section className={`${styles.feedContainer} ${isHomePage ? styles.homepageFeed : ''}`}>
             {error && <p className={styles.error}>{error}</p>}
-            <div className={styles.postGrid}>
+            <div className={styles.postsGrid}>
                 {posts.map((post, index) => (
                     <article key={index} className={styles.postCard}>
                         <img 
@@ -78,15 +77,13 @@ const Feed = () => {
                     </article>
                 ))}
             </div>
-            {hasNextPage && (
-                <div className={styles.loadMoreContainer}>
-                    <button
-                        onClick={loadMorePosts}
-                        className={styles.loadMoreButton}
-                    >
-                        Load More Posts
-                    </button>
-                </div>
+            {!isHomePage && hasNextPage && (
+                <button
+                    onClick={loadMorePosts}
+                    className={styles.loadMoreButton}
+                >
+                    Load More Posts
+                </button>
             )}
         </section>
     );
