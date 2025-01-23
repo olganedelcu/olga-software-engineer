@@ -10,13 +10,14 @@ import image3 from '../images/podcast3.png';
 const PodcastPage = () => {
   const episodes = [
     {
-      number: "Episode 1",
-      title: "From Freelancing, to Senior Software Engineer and relocation to Germany",
-      description: "Join us as we explore the journey from freelancing to becoming a Senior Software Engineer in Germany. We discuss wearing multiple tech hats, navigating impostor syndrome (which affects 58% of developers), and the challenges of international relocation.",
-      duration: "30 mins",
-      date: "Jul 6, 2024",
-      thumbnail: image1,
-      link: "https://www.youtube.com/watch?v=dwxsUdy7lIA&t=1411s&ab_channel=TechVoicesCorner"
+      {
+      number: "Episode 3",
+      title: "Getting to Senior and passion for code",
+      description: "Coming soon...",
+      duration: "32 mins",
+      date: "Sep 6, 2024",
+      thumbnail: image3,
+      link: ""
     },
     {
       number: "Episode 2",
@@ -28,13 +29,13 @@ const PodcastPage = () => {
       link: "https://www.youtube.com/watch?v=FYqCsJ7B2Y0&t=664s&ab_channel=TheTechJourneyPodcast"
     },
     {
-      number: "Episode 3",
-      title: "Getting to Senior and passion for code",
-      description: "Coming soon...",
-      duration: "32 mins",
-      date: "Sep 6, 2024",
-      thumbnail: image3,
-      link: ""
+      number: "Episode 1",
+      title: "From Freelancing, to Senior Software Engineer and relocation to Germany",
+      description: "Join us as we explore the journey from freelancing to becoming a Senior Software Engineer in Germany. We discuss wearing multiple tech hats, navigating impostor syndrome (which affects 58% of developers), and the challenges of international relocation.",
+      duration: "30 mins",
+      date: "Jul 6, 2024",
+      thumbnail: image1,
+      link: "https://www.youtube.com/watch?v=dwxsUdy7lIA&t=1411s&ab_channel=TechVoicesCorner"
     }
   ];
 
