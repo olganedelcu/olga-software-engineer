@@ -14,7 +14,7 @@ const positions = [
         highlight: "Engineering",
       },
       {
-        text: "Jobsties helps professionals navigate today's tough job market with strategy, clarity, and confidence. We guide you to reposition your personal brand, upgrade your mindset, and land better jobs—without wasting time on trial and error.",
+        text: "Helping professionals navigate today's tough job market with strategy, clarity, and confidence. We guide you to reposition your personal brand, upgrade your mindset, and land better jobs. Without wasting time on trial and error.",
         highlight: "Career Strategy",
       },
     ],
