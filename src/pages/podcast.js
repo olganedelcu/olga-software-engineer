@@ -5,7 +5,6 @@ import * as styles from "../components/podcast.module.css"
 import image from "../images/podcast.png"
 import image1 from "../images/podcast2.png"
 import main from "../images/main.png"
-import image3 from "../images/podcast3.png"
 import image4 from "../images/podcast4.png"
 
 const PodcastPage = () => {
