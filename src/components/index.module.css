@@ -6,7 +6,7 @@
 
 .heroHeader {
   text-align: center;
-  padding: 5rem 0 3rem;
+  padding: 2rem 0 3rem;
 }
 
 .mainTitle {
@@ -115,7 +115,7 @@
 
 @media (max-width: 768px) {
   .heroHeader {
-    padding: 3rem 0 2rem;
+    padding: 1.5rem 0 2rem;
   }
 
   .profileSection {

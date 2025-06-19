@@ -24,6 +24,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-shadow: 0 0 15px rgba(157, 108, 255, 0.5);
+    filter: brightness(1.2);
   }
   
   .links {

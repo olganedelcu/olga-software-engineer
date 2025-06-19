@@ -229,3 +229,74 @@
     color: white;
   }
 }
+
+.cardLink {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cardLink:hover {
+  transform: translateY(-4px);
+}
+
+.jobstiesCard {
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.jobstiesCard::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 80%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    transparent,
+    rgba(255, 255, 255, 0.03),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: lightShine 1.4s linear infinite;
+}
+
+@keyframes lightShine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(250%) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.jobstiesCard .role,
+.jobstiesCard .company {
+  color: white;
+}
+
+.jobstiesCard .techTag {
+  background: rgba(157, 108, 255, 0.1);
+  color: #9D6CFF;
+  border: 1px solid rgba(157, 108, 255, 0.2);
+}
+
+.jobstiesCard .techTag:hover {
+  background: rgba(157, 108, 255, 0.2);
+  border-color: rgba(157, 108, 255, 0.3);
+}

@@ -10,7 +10,6 @@ import image3 from '../images/podcast3.png';
 const PodcastPage = () => {
   const episodes = [
     {
-      {
       number: "Episode 3",
       title: "Getting to Senior and passion for code",
       description: "Coming soon...",
