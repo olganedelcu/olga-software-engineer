@@ -117,8 +117,8 @@
   
   .episodeGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 3rem;
   }
   
   .episodeCard {
@@ -139,7 +139,7 @@
   
   .episodeThumbnail {
     position: relative;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 60%; /* Slightly taller aspect ratio for better video display */
     flex-shrink: 0;
   }
   

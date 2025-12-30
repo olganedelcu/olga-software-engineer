@@ -20,6 +20,7 @@ const Header = () => {
             Blog
           </Link>
           <Link to="/podcast" className={styles.navLink} activeClassName={styles.active}>Podcast</Link>
+          <Link to="/projects" className={styles.navLink} activeClassName={styles.active}>Projects</Link>
         </div>
       </nav>
     </header>
