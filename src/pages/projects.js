@@ -67,6 +67,15 @@ const ProjectsPage = () => {
       status: "Live",
       link: "https://www.jobsties.com/",
     },
+    {
+      title: "Expendings Tracker App",
+      description:
+        "Built a web app to track personal expendings and incomes with charts and statistics",
+      video: "https://youtu.be/LGY2HAgC2-c",
+      technologies: ["Javascript"],
+      status: "Live",
+      link: "https://trackexpendings.netlify.app/",
+    },
   ]
 
   return (
