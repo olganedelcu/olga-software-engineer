@@ -35,7 +35,8 @@ const ProjectsPage = () => {
       description:
         "Personal tracker for a jobseekers to track everything from interviews to applications to applying to roles",
       image: "/projects_demos/platform_demo.png",
-      video: "https://youtu.be/eUhI0YeWIx8",
+      video:
+        "https://www.youtube.com/embed/eUhI0YeWIx8?si=TrlBvbDtMuGJifIZ",
       technologies: ["TypeScript", "React.js"],
       status: "Live",
       link: "https://platform.jobsties.com/",
@@ -44,7 +45,8 @@ const ProjectsPage = () => {
       title: "Cultural Cards Hillsong Berlin",
       description: "Digital print, you can check the cards at any time :)",
       image: "/projects_demos/cultural_cards.png",
-      video: "https://youtu.be/f-QC2DkJtO4",
+      video:
+        "https://www.youtube.com/embed/f-QC2DkJtO4?si=xi3qCCdffbUm8hbD",
       technologies: ["TypeScript", "Interactive"],
       status: "Live",
       link: "https://hillsong-cards.vercel.app/",
@@ -53,7 +55,8 @@ const ProjectsPage = () => {
       title: "Business Coach Portfolio Website",
       description:
         "Displaying services and booking appointments for a business coach",
-      video: "https://youtu.be/f99ism1y6u8",
+      video:
+        "https://www.youtube.com/embed/f99ism1y6u8?si=7IY_ItvWnyk_3zZI",
       technologies: ["TypeScript", "React.js"],
       status: "Live",
       link: "https://www.aktbusinesscoach.com/",
@@ -62,7 +65,8 @@ const ProjectsPage = () => {
       title: "Jobsties Official Website",
       description:
         "Built a website for company Jobsties to showcase their services and get leads",
-      video: "https://youtu.be/1bKL_Di-f3I",
+      video:
+        "https://www.youtube.com/embed/1bKL_Di-f3I?si=yFm_U1b3_pBoySR4",
       technologies: ["TypeScript", "React.js"],
       status: "Live",
       link: "https://www.jobsties.com/",
@@ -104,31 +108,17 @@ const ProjectsPage = () => {
           <div className={styles.postsGrid}>
             {projects.map((project, index) => (
               <div key={index} className={styles.postCard}>
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    paddingTop: "66.67%", 
-                    overflow: "hidden",
-                    borderRadius: "24px 24px 0 0",
-                    marginBottom: "1rem", 
-                  }}
-                >
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src={toYouTubeEmbedUrl(project.video)}
-                    title={project.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{
-                      border: "none",
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                    }}
-                  />
-                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src={project.video}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  style={{ borderRadius: "24px 24px 0 0", marginBottom: "1rem" }}
+                />
 
                 <div className={styles.postContent}>
                   <span
