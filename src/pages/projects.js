@@ -18,10 +18,18 @@ const ProjectsPage = () => {
       title: "Cultural Cards Hillsong Berlin",
       description: "Digital print, you can check the cards at any time :)",
       image: "/projects_demos/cultural_cards.png",
-      video: "https://www.youtube.com/f-QC2DkJtO4",
+      video: "https://youtu.be/f-QC2DkJtO4",
       technologies: ["TypeScript", "Interactive"],
       status: "Live",
-      link: "#",
+      link: "https://hillsong-cards.vercel.app/",
+    },
+    {
+      title: "Business Coach Portfolio Website",
+      description: "Displaying services and booking appointments for a business coach",
+      video: "https://youtu.be/f99ism1y6u8",
+      technologies: ["TypeScript", "React.js"],
+      status: "Live",
+      link: "https://www.aktbusinesscoach.com/",
     },
   ]
 
@@ -111,3 +119,5 @@ const ProjectsPage = () => {
 export const Head = () => <Seo title="Projects" />
 
 export default ProjectsPage
+
+
