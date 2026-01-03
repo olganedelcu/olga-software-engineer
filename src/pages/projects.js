@@ -76,6 +76,15 @@ const ProjectsPage = () => {
       status: "Live",
       link: "https://trackexpendings.netlify.app/",
     },
+    {
+      title: "Star Wars Catalog",
+      description:
+        "Built a web app to demostrate fetching data from an external API",
+      video: "https://youtu.be/4w2kLYpFqC0",
+      technologies: ["Javascript"],
+      status: "Live",
+      link: "https://catalog-star-wars.netlify.app/",
+    },
   ]
 
   return (
