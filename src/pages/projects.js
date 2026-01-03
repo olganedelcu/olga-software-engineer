@@ -75,7 +75,8 @@ const ProjectsPage = () => {
       title: "Expendings Tracker App",
       description:
         "Built a web app to track personal expendings and incomes with charts and statistics",
-      video: "https://youtu.be/LGY2HAgC2-c",
+      video:
+        "https://www.youtube.com/embed/LGY2HAgC2-c?si=5OWbDijs3LMHehg-",
       technologies: ["Javascript"],
       status: "Live",
       link: "https://trackexpendings.netlify.app/",
@@ -84,7 +85,8 @@ const ProjectsPage = () => {
       title: "Star Wars Catalog",
       description:
         "Built a web app to demostrate fetching data from an external API",
-      video: "https://youtu.be/4w2kLYpFqC0",
+      video:
+        "https://www.youtube.com/embed/4w2kLYpFqC0?si=ZMAl1hCYns0kgLs2",
       technologies: ["Javascript"],
       status: "Live",
       link: "https://catalog-star-wars.netlify.app/",

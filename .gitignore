@@ -70,3 +70,19 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# Gatsby
+.cache/
+public/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# Env
+.env*
