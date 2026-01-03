@@ -110,17 +110,33 @@ const ProjectsPage = () => {
           <div className={styles.postsGrid}>
             {projects.map((project, index) => (
               <div key={index} className={styles.postCard}>
-                <iframe
-                  width="560"
-                  height="315"
-                  src={project.video}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  style={{ borderRadius: "24px 24px 0 0", marginBottom: "1rem" }}
-                />
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    paddingTop: "56.25%",
+                    overflow: "hidden",
+                    borderRadius: "24px 24px 0 0",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={project.video}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      border: "none",
+                    }}
+                  />
+                </div>
 
                 <div className={styles.postContent}>
                   <span
