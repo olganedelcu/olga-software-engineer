@@ -62,7 +62,7 @@ const ProjectsPage = () => {
       title: "Jobsties Official Website",
       description:
         "Built a website for company Jobsties to showcase their services and get leads",
-      video: "https://youtu.be/f99ism1y6u8",
+      video: "https://youtu.be/1bKL_Di-f3I",
       technologies: ["TypeScript", "React.js"],
       status: "Live",
       link: "https://www.jobsties.com/",
