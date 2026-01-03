@@ -90,10 +90,10 @@ const ProjectsPage = () => {
                   style={{
                     position: "relative",
                     width: "100%",
-                    paddingTop: "66.67%", // Increased from 56.25% (16:9) to 66.67% (3:2) for more height
+                    paddingTop: "66.67%", 
                     overflow: "hidden",
                     borderRadius: "24px 24px 0 0",
-                    marginBottom: "1rem", // Added spacing between video and content
+                    marginBottom: "1rem", 
                   }}
                 >
                   <iframe

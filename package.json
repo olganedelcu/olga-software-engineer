@@ -4,6 +4,10 @@
   "description": "Portfolio",
   "version": "0.1.0",
   "author": "Olga Nedelcu <olganedelcuam@gmail.com>",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.x.x",
     "gatsby": "^5.13.5",
