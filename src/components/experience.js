@@ -21,71 +21,42 @@ const positions = [
     tech: ["Personal Branding", "Career Strategy", "Professional Development", "Leadership", "Mentoring"],
   },
   {
-    company: "TechVoices Podcast",
-    role: "Host / Software Engineer",
-    period: "Apr 2024 - January 2025",
-    location: "Berlin, Germany · On-site",
-    description: [
-      {
-        text: "- Lead Technical Podcast inviting CTOs, Tech Leads and Senior Software Engineers from several start-ups and organisations",
-        highlight: "Tech Leadership",
-      },
-      {
-        text: "- Develop responsive web apps using TypeScript/JavaScript frameworks (React, Next.js, etc.)",
-        highlight: "Frontend Dev",
-      },
-      {
-        text: "- Architect and implement Supabase backend solutions with PostgreSQL optimization",
-        highlight: "Backend Architecture",
-      },
-      {
-        text: "- Create persistent user experiences with local storage/session management",
-        highlight: "User Experience",
-      },
-      {
-        text: "- Build auto-save functionality and state restoration systems",
-        highlight: "System Design",
-      },
-      {
-        text: "- Optimise data storage strategies for performance and cost efficiency",
-        highlight: "Performance",
-      },
-    ],
-    tech: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Supabase",
-      "PostgreSQL",
-      "System Design",
-      "Software Infrastructure",
-    ],
-  },
-  {
     company: "Industrial Analytics GmbH",
     role: "Software Engineer",
     period: "April 2023 - April 2024",
     location: "Berlin, Germany",
     description: [
       {
-        text: "- Set up a documentation server and page for streamlined knowledge sharing",
-        highlight: "Documentation",
+        text: "- Led frontend ownership of a greenfield internal platform, delivering a centralized documentation and tooling system used by 200+ internal users, built from scratch to production.",
+        highlight: "Greenfield Platform",
       },
       {
-        text: "- Developed AWS pipelines and implemented bash scripting for automated deployments",
-        highlight: "40% Faster Deployments",
+        text: "- Designed and implemented a scalable UI architecture supporting 10+ internal workflows across engineering, HR, and operations, with a strong focus on usability, maintainability, and consistency.",
+        highlight: "scalable UI architecture supporting 10+ internal workflows",
       },
       {
-        text: "- Optimized user experience and mobile responsiveness using Figma, Lighthouse, and SVG formats",
-        highlight: "25% Better UX",
+        text: "- Containerized 3+ services (frontend, backend, documentation) and established CI/CD pipelines, reducing manual deployment steps by 60% and improving release reliability.",
+        highlight: "Containerization & CI/CD",
       },
       {
-        text: "- Implemented Google OAuth for secure user authentication and seamless login experience",
+        text: "- Integrated single sign-on (SSO) using Google OAuth, enabling secure access across 5+ internal tools.",
         highlight: "Security & Auth",
       },
       {
-        text: "- Utilized Postman for API testing and debugging, ensuring reliable frontend-backend integration",
-        highlight: "API Integration",
+        text: "- Implemented A/B testing and feature experimentation, validating UI changes and increasing feature adoption.",
+        highlight: "A/B Testing",
+      },
+      {
+        text: "- Refactored 68 legacy automation scripts (300+ LOC each) into a modern TypeScript codebase, improving maintainability and reducing operational errors by 40%.",
+        highlight: "Refactoring Legacy Code",
+      },
+      {
+        text: "- Established a centralized, CI/CD-integrated documentation system, ensuring 100% alignment between documentation and production releases.",
+        highlight: "Documentation System",
+      },
+      {
+        text: "- Collaborated with 8+ stakeholders (CTO, Engineering Managers, Product) to deliver 8+ features from requirements through production.",
+        highlight: "Collaborated with 8+ stakeholders",
       },
     ],
     tech: [
