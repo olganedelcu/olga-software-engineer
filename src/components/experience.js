@@ -4,7 +4,7 @@ import * as styles from "./experience.module.css"
 const positions = [
   {
     company: "Jobsties",
-    role: "CTO & Co-Founder",
+    role: "Main Software Engineer",
     period: "May 2024 - Present",
     location: "Berlin, Germany · Remote",
     link: "https://jobsties.com/",
