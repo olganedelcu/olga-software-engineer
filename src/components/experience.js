@@ -5,7 +5,7 @@ const positions = [
   {
     company: "Jobsties",
     role: "CTO & Co-Founder",
-    period: "May 2025 - Present",
+    period: "May 2024 - Present",
     location: "Berlin, Germany · Remote",
     link: "https://jobsties.com/",
     description: [
