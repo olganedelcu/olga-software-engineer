@@ -23,7 +23,7 @@ const positions = [
   {
     company: "TechVoices Podcast",
     role: "Host / Software Engineer",
-    period: "Apr 2024 - Present",
+    period: "Apr 2024 - January 2025",
     location: "Berlin, Germany · On-site",
     description: [
       {
@@ -64,7 +64,7 @@ const positions = [
   {
     company: "Industrial Analytics GmbH",
     role: "Software Engineer",
-    period: "2024 - Present",
+    period: "April 2023 - April 2024",
     location: "Berlin, Germany",
     description: [
       {
