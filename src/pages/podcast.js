@@ -72,7 +72,7 @@ Today we are joined by Anemari Fiser, and we are tackling everything from: - Fro
                   Listen on Spotify
                 </a>
                 <a
-                  href="https://www.youtube.com/@Tech-voices-podcast-pq9nj"
+                  href="https://www.youtube.com/@techjourneypod"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${styles.platformButton} ${styles.youtube}`}

@@ -26,10 +26,7 @@
   text-align: center;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--text-primary);
   margin-bottom: 3rem;
   position: relative;
   z-index: 1;

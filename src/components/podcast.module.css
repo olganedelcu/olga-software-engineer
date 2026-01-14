@@ -3,146 +3,224 @@
     margin: 0 auto;
     padding: 2rem 1.5rem;
   }
-  
+
   .heroSection {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background: var(--surface);
-    border-radius: 32px;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
-    box-shadow: var(--card-shadow);
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
   }
-  
+
+  .heroSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    opacity: 0.8;
+  }
+
   .heroContent {
     display: flex;
     align-items: center;
-    gap: 4rem;
-    max-width: 1000px;
+    gap: 3rem;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 1rem;
   }
-  
+
   .textContent {
     flex: 1;
   }
-  
+
   .title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
     color: var(--text-primary);
   }
-  
+
   .highlight {
-    background: var(--gradient);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     display: inline-block;
   }
-  
+
   .description {
-    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-size: 0.9375rem;
     color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
   }
-  
+
   .imageWrapper {
-    flex: 0 0 400px;
+    flex: 0 0 300px;
     position: relative;
-    padding: 1rem;
   }
-  
+
   .podcastImage {
     width: 100%;
     height: auto;
-    border-radius: 24px;
-    box-shadow: var(--card-shadow);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15);
+    transition: all 0.3s ease;
   }
-  
+
+  .podcastImage:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
+  }
+
   .platformLinks {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
   }
-  
+
   .platformButton {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 1rem 1.75rem;
+    padding: 0.875rem 1.5rem;
     border-radius: 100px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
   }
-  
+
   .spotify {
     background: #1DB954;
     color: white;
-    padding: 1rem 1.75rem;
   }
-  
+
   .youtube {
     background: #FF0000;
     color: white;
-    padding: 1rem 1.75rem;
   }
-  
+
   .platformButton:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--button-hover-shadow);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
-  
+
   .platformIcon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
   }
-  
+
   .latestEpisodes {
-    padding: 4rem 0;
+    padding: 0 0 2rem;
   }
-  
+
   .sectionTitle {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
-  
+
   .episodeGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
   }
-  
+
   .episodeCard {
     background: var(--surface);
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--border);
-    transition: all 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    position: relative;
   }
-  
+
+  .episodeCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .episodeCard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .episodeCard:hover::before {
+    opacity: 1;
+  }
+
+  .episodeCard:hover::after {
+    opacity: 1;
+  }
+
   .episodeCard:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 24px 60px rgba(102, 126, 234, 0.25),
+                0 0 0 1px rgba(102, 126, 234, 0.15);
+    border-color: rgba(102, 126, 234, 0.4);
   }
   
   .episodeThumbnail {
     position: relative;
-    padding-top: 60%; /* Slightly taller aspect ratio for better video display */
+    padding-top: 60%;
     flex-shrink: 0;
+    overflow: hidden;
+    z-index: 1;
   }
-  
+
+  .episodeThumbnail::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+  }
+
+  .episodeCard:hover .episodeThumbnail::after {
+    opacity: 1;
+  }
+
   .episodeThumbnail img {
     position: absolute;
     top: 0;
@@ -150,62 +228,139 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.6s ease;
+    z-index: 0;
   }
-  
+
+  .episodeCard:hover .episodeThumbnail img {
+    transform: scale(1.08);
+  }
+
   .playButton {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 48px;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.9);
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.98);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .playButton::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  .playButton:hover::before {
+    opacity: 0.3;
+  }
+
+  .playButton:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+    background: white;
+    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.5);
+    border-color: rgba(102, 126, 234, 0.3);
+  }
+
+  .playButton svg {
+    width: 28px;
+    height: 28px;
+    fill: #667eea;
     transition: all 0.3s ease;
   }
-  
-  .playButton svg {
-    width: 24px;
-    height: 24px;
-    fill: var(--primary);
+
+  .playButton:hover svg {
+    fill: #764ba2;
+    transform: scale(1.1);
   }
-  
+
   .episodeContent {
     padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
-  
+
   .episodeNumber {
-    font-size: 0.875rem;
-    color: var(--primary);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
+    font-size: 0.75rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
+    color: #667eea;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    width: fit-content;
+    border: 1px solid rgba(102, 126, 234, 0.25);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
   }
-  
+
+  .episodeCard:hover .episodeNumber {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+  }
+
   .episodeTitle {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
-    line-height: 1.4;
+    line-height: 1.3;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
   }
-  
+
+  .episodeCard:hover .episodeTitle {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: translateX(4px);
+  }
+
   .episodeDescription {
     font-size: 0.875rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 1rem;
+    opacity: 0.9;
+    flex: 1;
   }
-  
+
   .episodeMeta {
     display: flex;
     justify-content: space-between;
     color: var(--text-secondary);
     font-size: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(102, 126, 234, 0.1);
+    opacity: 0.8;
   }
   
   @media (max-width: 968px) {
