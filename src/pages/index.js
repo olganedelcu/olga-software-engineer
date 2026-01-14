@@ -45,8 +45,9 @@ const IndexPage = () => (
             </div>
             <div className={styles.techStack}>
               <span className={styles.techBadge}>JavaScript</span>
-              <span className={styles.techBadge}>React.js</span>
               <span className={styles.techBadge}>TypeScript</span>
+              <span className={styles.techBadge}>React.js</span>
+              <span className={styles.techBadge}>Next.js</span>
               <span className={styles.techBadge}>Node.js</span>
               <span className={styles.techBadge}>Redux</span>
               <span className={styles.techBadge}>REST APIs</span>

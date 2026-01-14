@@ -20,12 +20,12 @@
     font-size: 1.5rem;
     font-weight: 800;
     text-decoration: none;
-    background: var(--gradient);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 15px rgba(157, 108, 255, 0.5);
-    filter: brightness(1.2);
+    text-shadow: 0 0 15px rgba(102, 126, 234, 0.4);
+    filter: brightness(1.1);
   }
   
   .links {
@@ -48,12 +48,12 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: var(--gradient);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     transition: width 0.3s ease;
   }
-  
+
   .navLink:hover {
-    color: var(--primary);
+    color: #667eea;
   }
   
   .navLink:hover::after {

@@ -10,21 +10,38 @@ const positions = [
     link: "https://jobsties.com/",
     description: [
       {
-        text: "Building the #1 career platform for professionals to land the next role in Europe",
-        highlight: "Engineering",
+        text: "Drove technical ownership of a production SaaS platform, making architectural decisions across frontend, backend, and data layers to support scalable growth and multi-tenant usage.",
+        highlight: "Technical Ownership",
       },
       {
-        text: "Helping professionals navigate today's tough job market with strategy, clarity, and confidence. We guide you to reposition your personal brand, upgrade your mindset, and land better jobs. Without wasting time on trial and error.",
-        highlight: "Career Strategy",
+        text: "Built secure authentication and authorization flows using Supabase Auth, PostgreSQL, and Row-Level Security (RLS), ensuring user-level data isolation and compliance in a multi-tenant SaaS environment.",
+        highlight: "Security & Auth",
+      },
+      {
+        text: "Architected a relational PostgreSQL database schema (8+ core tables) supporting coach-mentee relationships, job applications, task workflows, and weekly recommendations.",
+        highlight: "Database Architecture",
+      },
+      {
+        text: "Implemented role-based access control (RBAC) using Supabase policies and application-level authorization, delivering distinct dashboards and permissions.",
+        highlight: "RBAC",
+      },
+      {
+        text: "Developed real-time data synchronization with Supabase subscriptions, enabling instant updates across dashboards and improving user engagement and operational efficiency.",
+        highlight: "Real-time Sync",
+      },
+      {
+        text: "Acted as a technical partner to product and business stakeholders, influencing roadmap decisions through feasibility analysis and system design considerations.",
+        highlight: "Technical Partnership",
       },
     ],
-    tech: ["Personal Branding", "Career Strategy", "Professional Development", "Leadership", "Mentoring"],
+    tech: ["Next.js", "TypeScript", "React", "Supabase", "PostgreSQL", "Tailwind CSS", "Row-Level Security", "RBAC", "Multi-tenant SaaS"],
   },
   {
     company: "Industrial Analytics GmbH",
     role: "Software Engineer",
     period: "April 2023 - April 2024",
     location: "Berlin, Germany",
+    link: "https://industrial-analytics.io/",
     description: [
       {
         text: "- Led frontend ownership of a greenfield internal platform, delivering a centralized documentation and tooling system used by 200+ internal users, built from scratch to production.",
@@ -76,6 +93,7 @@ const positions = [
     role: "Assistant Tech Management",
     period: "Apr 2022 - Sep 2022",
     location: "Berlin, Germany",
+    link: "https://www.solarisgroup.com/en/",
     description: [
       {
         text: "- Created comprehensive reports and presentations for leadership meetings, managing on-call developer compensation tracking",
@@ -105,6 +123,7 @@ const positions = [
     role: "Junior Frontend Developer",
     period: "Jul 2021 - Mar 2022",
     location: "Berlin, Germany",
+    link: "http://theseniordev.com/",
     description: [
       {
         text: "- Identified and improved billing process by implementing Stripe automated reports and Excel integration",
