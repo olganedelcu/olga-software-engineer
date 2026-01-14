@@ -1,21 +1,35 @@
-# example netlify.toml
+# Netlify configuration for Gatsby
 [build]
-  command = "npm run build"
+  command = "gatsby clean && npm run build"
   functions = "netlify/functions"
   publish = "public"
 
-  ## Uncomment to use this redirect for Single Page Applications like create-react-app.
-  ## Not needed for static site generators.
-  #[[redirects]]
-  #  from = "/*"
-  #  to = "/index.html"
-  #  status = 200
+[build.environment]
+  NODE_VERSION = "24"
+  NPM_FLAGS = "--legacy-peer-deps"
 
-  ## (optional) Settings for Netlify Dev
-  ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
-  #[dev]
-  #  command = "yarn start" # Command to start your dev server
-  #  port = 3000 # Port that the dev server will be listening on
-  #  publish = "dist" # Folder with the static content for _redirect file
+# Cache control headers for proper CSS/JS updates
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
-  ## more info on configuring this file: https://ntl.fyi/file-based-build-config
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/page-data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
