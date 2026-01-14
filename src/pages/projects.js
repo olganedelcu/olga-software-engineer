@@ -96,7 +96,7 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.heroHeader} style={{ paddingTop: "2rem" }}>
+        <div className={styles.heroHeader}>
           <h1 className={styles.mainTitle}>
             <span className={styles.highlight}>Projects</span>
           </h1>
